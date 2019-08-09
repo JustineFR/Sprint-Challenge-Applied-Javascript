@@ -13,7 +13,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
 .then(response => {
     // console.log(response.data.topics)
     const topics = response.data.topics
-    // console.log('topics: ', topics)
+    console.log('topics: ', topics)
     topics.forEach(topic => {
         tabTopics.appendChild(CreateTab(topic))
     })
@@ -35,4 +35,4 @@ function CreateTab(topic) {
     return tab;
 }
 
-CreateTab()
+// CreateTab()
